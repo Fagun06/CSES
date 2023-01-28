@@ -1,4 +1,4 @@
-                  /**Bismillahir Rahmanir Rahim.**/
+                   /**Bismillahir Rahmanir Rahim.**/
 /*
          Md.Fagun Molla
          18ICTCSE006
@@ -98,28 +98,17 @@ int nCr(int a, int b) {
 }
  
 void solve(){
-  string s; cin>>s;
-  map<char,int>mp;
-  for(int i=0; i<s.size(); i++) mp[s[i]]++;
-    int n=s.size();
-    ll ans=fact[n];
-   // cout<<ans<<endl;
-    bool f=true;
-    for(auto it : mp) {
-        ans*=invFact[it.S];
-        ans%=mod;
-    }
-   // if(f) ans=x;
-    cout<<ans<<endl;
+  ll n,k; cin>>n>>k;
+  
+  cout<<nCr(n,k)<<endl;
     
 }
 int main()
 {
    // io();
     init();
-    int T=1;//cin>>T;
+    int T=1;cin>>T;
     while(T--) solve();
     return 0;
 }
 //cout<<fixed<<setprecision(9)
- 
